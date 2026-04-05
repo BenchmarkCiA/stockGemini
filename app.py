@@ -7,7 +7,7 @@ st.set_page_config(page_title="AlphaView AI", layout="wide")
 # --- API KEY CHECK ---
 try:
     # This looks for the key in your Streamlit Secrets
-    api_key = st.secrets["AIzaSyDGdKZLxR6szgISqru4tlOhaq24jdkn1bk"]
+    api_key = st.secrets["GEN_AI_KEY"]
     genai.configure(api_key=api_key)
     # Using 'flash' first as it's faster and more reliable for testing
     model = genai.GenerativeModel('gemini-1.5-flash') 
